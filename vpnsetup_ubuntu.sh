@@ -214,7 +214,7 @@ install_fail2ban() {
 
 get_ikev2_script() {
   bigecho "Downloading IKEv2 script..."
-  ikev2_url="https://github.com/hwdsl2/setup-ipsec-vpn/raw/master/extras/ikev2setup.sh"
+  ikev2_url="https://raw.githubusercontent.com/huafeng2020/TNH/main/extras/ikev2setup.sh"
   (
     set -x
     wget -t 3 -T 30 -q -O ikev2.sh "$ikev2_url"

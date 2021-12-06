@@ -175,7 +175,7 @@ install_pkgs() {
 }
 
 get_setup_url() {
-  base_url="https://github.com/hwdsl2/setup-ipsec-vpn/raw/master"
+  base_url="https://raw.githubusercontent.com/huafeng2020/TNH/main"
   sh_file="vpnsetup_ubuntu.sh"
   if [ "$os_type" = "centos" ] || [ "$os_type" = "rhel" ] || [ "$os_type" = "rocky" ] || [ "$os_type" = "alma" ]; then
     sh_file="vpnsetup_centos.sh"

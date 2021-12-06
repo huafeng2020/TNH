@@ -130,7 +130,7 @@ Error: Libreswan version '$swan_ver' is not supported.
        This script requires one of these versions:
        3.23, 3.25-3.27, 3.29, 3.31-3.32 or 4.x
        To update Libreswan, run:
-       wget https://git.io/vpnupgrade -O vpnup.sh && sudo sh vpnup.sh
+       wget https://raw.githubusercontent.com/huafeng2020/TNH/main/extras/vpnupgrade.sh -O vpnup.sh && sudo sh vpnup.sh
 EOF
       exit 1
       ;;
@@ -303,7 +303,7 @@ show_update_info() {
     echo "Note: A newer version of Libreswan ($swan_ver_latest) is available."
     if [ "$in_container" = "0" ]; then
       echo "      To update, run:"
-      echo "      wget https://git.io/vpnupgrade -O vpnup.sh && sudo sh vpnup.sh"
+      echo "      wget https://raw.githubusercontent.com/huafeng2020/TNH/main/extras/vpnupgrade.sh -O vpnup.sh && sudo sh vpnup.sh"
     else
       echo "      To update this Docker image, see: https://git.io/updatedockervpn"
     fi
